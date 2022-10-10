@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    background-color: #e0eded;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background-color: #557d9b;
+    padding: 0px;
+    margin: 0px;
+    height: 20%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.learned-lang {
+    display: inline-block;
+}
+
+#about-me-text {
+    width: 60%;
+}
+
+.about-divs {
+    display: inline-block;
+}
+
+.code-img {
+    height: 100px;
+    width: 100px;
+}
+
+.code-caption {
+    text-align: center;
+}
