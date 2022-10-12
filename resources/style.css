@@ -1,45 +1,151 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-    background-color: #e0eded;
+    background-color: #e3e3e3;
 }
 
 html, body {
     height: 100%;
 }
 
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h2 {
+    padding: 25px 15px 15px 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* Header --------------------------------------------------------------------------------------*/
 header {
-    background-color: #557d9b;
+    background-color: #004074;
     padding: 0px;
-    margin: 0px;
-    height: 20%;
+    margin: 15px;
+    min-height: 20%;
+    border: 20px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+#topbar {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 h1 {
     text-align: center;
     padding-top: 20px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color:#000000;
+}
+
+button {
+    margin: 15px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(114, 111, 118);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+hr {
+    border: 2px solid black;
+    height: px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f09b46
+}
+
+/* Main (About)--------------------------------------------------------------------------------------*/
+main {
+    margin: 15px;
+    background-color: rgb(85, 111, 182);
+    border-radius: 20px;
 }
 
 .learned-lang {
     display: inline-block;
 }
 
-#about-me-text {
-    width: 60%;
-}
-
 .about-divs {
     display: inline-block;
+    vertical-align: top;
+}
+
+#about-me-text {
+    width: 60%;
+    padding: 20px 20px 0px 30px;
+}
+
+#code-div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
 }
 
 .code-img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 .code-caption {
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+    font-weight: bold;
+}
+
+#stickman-img {
+    height: 400px;
+    width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#my-caption {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Main (Projects)--------------------------------------------------------------------------------------*/
+#projects-section {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+summary {
+    font-size: 20px;
+    font-weight: 600;
+}   
+
+#mixed-message-code {
+    height: 40rem;
+    width: 40rem;
+}
+
+/* Main (Contact)--------------------------------------------------------------------------------------*/
+#contact-section {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 24px;
 }

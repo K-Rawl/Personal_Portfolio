@@ -6,16 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kieran Rawl's Personal Portfolio</title>
         <link rel="stylesheet" href="./resources/style.css">
-        <link rel="script" href="./resources/main.js">
+        <script rel="script" src="./resources/main.js"></script>
     </head>
     <body>
         <header>
-            <h1>Kieran Rawl's Personal Portfolio</h1>
-
-            <nav>
+            <div id="topbar">
+                <h1 id="title">Kieran Rawl's Personal Portfolio</h1>
+                <button onclick="changeColor()">Change Title Color</button>
+            </div>
+            <hr>
+            <nav id="navbar">
                 <a href="#about-section">About Me</a>
                 <a href="#projects-section">My Projects</a>
-                <a href="contact-section">Contact</a>
+                <a href="#contact-section">Contact</a>
             </nav>
         </header>
 
@@ -25,38 +28,58 @@
                     <h2>About Me</h2>
                     <p>Hi I'm Kieran. I have recently been learning to code to pursue a career in web development. I have used 
                         the assistance of IT Career Switch, Codecademy and the occasional Youtube video. The programming languages
-                        I have some experience with are:
+                        I have some experience with, are:
                     </p>
-                    <figure class="learned-lang">
-                        <img src="./resources/images/html.png" class="code-img">
-                        <figcaption class="code-caption">HTML</figcaption>
-                    </figure>
-                    <figure class="learned-lang">
-                        <img src="./resources/images/css.png" class="code-img">
-                        <figcaption class="code-caption">CSS</figcaption>
-                    </figure>
-                    <figure class="learned-lang">
-                        <img src="./resources/images/javascript.png" class="code-img">
-                        <figcaption class="code-caption">Javascript</figcaption>
-                    </figure>
+                    <div id="code-div">
+                        <figure class="learned-lang">
+                            <img src="./resources/images/html.png" class="code-img" alt="HTML Logo">
+                            <figcaption class="code-caption">HTML</figcaption>
+                        </figure>
+                        <figure class="learned-lang">
+                            <img src="./resources/images/css.png" class="code-img" alt="CSS Logo">
+                            <figcaption class="code-caption">CSS</figcaption>
+                        </figure>
+                        <figure class="learned-lang">
+                            <img src="./resources/images/javascript.png" class="code-img" alt="Javascript Logo">
+                            <figcaption class="code-caption">Javascript</figcaption>
+                        </figure>
+                    </div>
                 </div>
                 <div class="about-divs">
                     <figure>
-                        <img src="./resources/images/stickman.png" id="stickman-img">
-                        <figcaption>Me</figcaption>
+                        <img src="./resources/images/stickman.png" id="stickman-img" alt="Stickman supposed to be me">
+                        <figcaption id="my-caption">Kieran Rawl</figcaption>
                     </figure>
                 </div>
 
             </section>
-            
+            <hr>
             <section id="projects-section">
                 <h2>My Projects</h2>
+                <details>
+                    <summary>Mixed Messages</summary>
+                    <a href="https://github.com/K-Rawl/Mixed_Messages/blob/master/script.js" target="_blank">
+                        <img src="./resources/images/mixed_messages.png" alt="The code for my mixed messages project" 
+                        id="mixed-message-code">
+                    </a>
+                    <p>The code generates three randomly generated details (from arrays) to create a made up animal fact.</p>
+                </details>
+                <details>
+                    <summary>Future Projects</summary>
+                    <p>The projects I am yet to do.</p>
+                </details>
             </section>
-            
+            <hr>
             <section id="contact-section">
                 <h2>Contact</h2>
+                <address>
+                    Written by <a href="mailto:kieran.grain@yahoo.com">Kieran Rawl</a><br> 
+                    London <br>
+                    UK
+                </address>
             </section>
             
         </main>
     </body>
+
 </html>
